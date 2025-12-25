@@ -1,0 +1,407 @@
+Reset dasar dan font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Arial, sans-serif;
+  text-align: center;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background-color: #ff08b5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1608198093002-ad4e005484ec");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  color: white;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color:#151817;
+}
+
+.btn-login {
+  background-color: #ff7b00;
+  color: #090a09dc;
+  padding: 0.5rem 1.3rem;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #0d1110;
+  color: white;
+}
+
+/* ================= ABOUT ================= */
+.about{
+  padding: 4rem 6%;
+  background: #fff;
+}
+
+.about h2{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.about-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.about-image img{
+  width: 100%;
+  max-width: 400px;
+  border-radius: 2rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.about-text{
+  max-width: 500px;
+}
+
+.about-text p{
+  font-size: 1.4rem;
+  color: #666;
+  line-height: 1.8;
+}
+
+
+/* HERO */
+.hero {
+  margin-top: 70px; /* supaya tidak tertutup navbar */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 20px 100px;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+/* Tombol utama */
+.btn {
+  background-color: #f19f5b;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(36, 35, 35, 0.6);
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #daece7;
+}
+
+/* FEATURES */
+.features {
+  background-color: white;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: #e0f2f1;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-8px);
+}
+
+.box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #c46415;
+}
+
+.box p {
+  font-size: 1rem;
+  color: #692f00;
+}
+
+/* CTA */
+.cta {
+  background-color: #d472019f;
+  color: white;
+  padding: 60px 20px;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ================= PRODUCTS ================= */
+.products{
+  padding: 4rem 2rem;
+  background: #fefefe;
+  text-align: center;
+}
+
+.products h2{
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card{
+  width: 325px;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 60px 22px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+.card img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.card-content{
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-content h3{
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p{
+  font-size: 1.3rem;
+  color: #666;
+  flex-grow: 1;
+}
+
+.card-content .btn{
+  margin-top: auto;
+  background: var(--pink);
+  color: #5ccfc2;
+  padding: 0.7rem 1.8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.card-content .btn:hover{
+  background: black;
+}
+
+/* ================= CONTACT ================= */
+.contact{
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.contact h2{
+  font-size: 2.5rem;
+}
+
+.subtitle{
+  font-size: 1.4rem;
+  color: #777;
+  margin-bottom: 3rem;
+}
+
+.contact-container{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.contact-info{
+  text-align: left;
+  font-size: 1.4rem;
+  color: #444;
+}
+
+.contact-info p{
+  margin-bottom: 1.2rem;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.8rem;
+  border: 1px solid #ddd;
+  font-size: 1.3rem;
+}
+
+.contact-form textarea{
+  resize: none;
+  height: 100px;
+}
+
+.contact-form button{
+  padding: 1rem;
+  background: var(--pink);
+  color: white;
+  border-radius: 999px;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover{
+  background: black;
+}
+
+
+.footer{
+  background: #333;
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.footer h4{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer p{
+  font-size: 1.2rem;
+}
+
+.footer{
+  width: 100%;
+  background-color: #cf6c1b;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer p{
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    align-items: center;
+  }
+
+  .logo {
+    flex-basis: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow-x: auto;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  .nav-menu a {
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+
+  .btn-login {
+    padding: 0.5rem 1.2rem;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+}
